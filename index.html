@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beemusic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="app">
+            <nav class="app__navbar">
+                <div class="navbar__controls">
+                    <div class="navbar__controls--left">
+                        <a href="#" class="navbar__controls-btn navbar__controls--close"></a>
+                        <a href="#" class="navbar__controls-btn navbar__controls--min"></a>
+                        <a href="#" class="navbar__controls-btn navbar__controls--max"></a>
+                    </div>
+                    <div class="navbar__controls--right">
+                        <a href="" class="navbar__controls--list">
+                            <i class="fas fa-list-ul"></i>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar__logo">
+                    <a href="" class="navbar__icon">
+                        <i class="fab fa-forumbee"></i>
+                    </a>
+                    <a class="navbar__text">
+                        <span class="navbar__text--orange">Bee</span>music
+                    </a>
+                </div>
+                <div class="navbar__content">
+                    <div class="navbar__home">
+                        <ul class="navbar__list">
+                            <li class="navbar__item-icon navbar__item navbar__item"><a href="#" class="navbar__link"><i
+                                        class="navbar__item-icon fas fa-home"></i><span>Home</span></a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link"><i
+                                        class="navbar__item-icon fas fa-chart-line"></i><span>Trends</span></a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link"><i
+                                        class="fas fa-compass"></i><span>Feed</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar__discover">
+                        <p class="navbar__title">Discover</p>
+                        <ul class="navbar__list">
+                            <li class="navbar__item navbar__item">
+                                <a href="#" class="navbar__link">
+                                    <i class="navbar__item-icon fas fa-glass-cheers"></i><span>New &
+                                        Notable</span></a>
+                            </li>
+                            <li class="navbar__item"><a href="#" class="navbar__link"><i
+                                        class="navbar__item-icon fas fa-calendar-alt"></i><span>Release
+                                        Calendar</span></a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link"><i
+                                        class="navbar__item-icon fas fa-ticket-alt"></i><span>Event</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar__collection">
+                        <p class="navbar__title">Collection</p>
+                        <ul class="navbar__list">
+                            <li class="navbar__item navbar__item"><a href="#" class="navbar__link"><i
+                                        class="fas fa-heart"></i><span>Favorite songs</span></a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link"><i
+                                        class="fas fa-users"></i><span>Artist</span></a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link"><i
+                                        class="fas fa-star"></i><span>Album</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="navbar__user">
+                    <a href="" class="user__info">
+                        <div class="user__avatar">
+                            <img src="https://images.unsplash.com/photo-1641542846280-28138f9053e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="avatar" class="user__img">
+                        </div>
+                        <div class="user__name">
+                            Ly Minh Phuc
+                        </div>
+                    </a>
+
+                    <a class="user__goto" href=""><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </nav>
+            <div class="app__main">
+                <div class="app__controls">
+                    <div class="app__navigator"><a href=""><i class="fas fa-arrow-left"></i></a><a href=""><i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="app__search">
+                        <input type="text" class="app__search-input" name="app__search-input"
+                            placeholder="Search for artists, songs, and...">
+                        <i class="fas fa-search app__search-icon"></i>
+                    </div>
+                </div>
+                <p class="app__hot">What's hot 🔥</p>
+                <div class="app__trending">
+                    <h2 class="app__trending-text">Trending</h2>
+                    <a href="" class="app__trending-more">More<i class="fas fa-chevron-right"></i><a />
+                </div>
+                <div class="app__banner">
+                    <div class="banner__overlay">
+                        <p class="banner__title">Artist</p>
+                        <h2 class="banner__desc">On Top</h2>
+                        <h2 class="banner__desc">Of The World</h2>
+                        <div class="banner__btn-group">
+                            <a href="#" class="banner__btn banner__btn--play">PLAY</a>
+                            <a href="#" class="banner__btn banner__btn--follow">FOLLOW</a>
+                            <div class="banner__counts">
+                                <p class="banner__counts--month">Monthly Listeners</p>
+                                <p class="banner__counts--number">427901</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="app__playlist">
+                    <div class="playlist__text">
+                        <h2 class="playlist__text-myplaylist">My Playlist</h2>
+                        <a href="" class="playlist__text-showall">Show all</a>
+                    </div>
+                    <div class="playlist__heading">
+                        <span>#</span>
+                        <span>TITLE</span>
+                        <span>ARTIST</span>
+                        <span>TIME</span>
+                        <span>ALBUM</span>
+                    </div>
+                    <ul class="playlist__list">
+                    </ul>
+                </div>
+                <div class="app__player">
+                    <p class="player__song-name"></p>
+
+                    <div class="player__control">
+                        <div class="player__control-action">
+                            <a href=""><i class="far fa-heart"></i></a>
+                            <a href=""><i class="far fa-square-plus"></i></a>
+                            <a href=""><i class="fas fa-expand-alt"></i></a>
+
+                        </div>
+                        <div class="player__control-main">
+                            <a href=""><i class="fas fa-redo"></i></a>
+                            <a href="#" class="back-btn"><i class="fas fa-fast-backward"></i></a>
+                            <a href="#" class="play-btn"><i class="fas fa-play-circle"></i></a>
+                            <a href="#" class="next-btn"><i class="fas fa-fast-forward"></i></a>
+                            <a href=""><i class="fas fa-random"></i></a>
+                        </div>
+                        <div class="player__control-volume">
+                            <a href=""><i class="fas fa-volume-off"></i></a>
+                            <input type="range" name="player__volume-input" class="player__volume-input"
+                                id="player__volume-input">
+                            <a href=""><i class="fas fa-volume-down"></i></a>
+                        </div>
+                    </div>
+                    <div class="player__seekbar">
+                        <p class="player__seekbar-current">0:00</p>
+                        <input type="range" name="player__seekbar-input" class="player__seekbar-input"
+                            id="player__seekbar-input">
+                        <p class="player__seekbar-length">4:32</p>
+
+                    </div>
+                </div>
+                <audio
+                    src="https://data04.chiasenhac.com/downloads/1519/2/1518407-343d2a02/320/The%20Hills%20-%20The%20Weeknd.mp3"
+                    class="app__audio"></audio>
+            </div>
+            <div class="app__sidebar">
+                <div class="app__shortcut">
+                    <h2 class="shortcut__text">Shortcuts</h2>
+                    <ul class="shortcut__list">
+                        <li class="shortcut__item">
+                            <a href="#" class="shortcut__link">❄️ Chill</a>
+                        </li>
+                        <li class="shortcut__item">
+                            <a href="#" class="shortcut__link">🎸 Rocks</a>
+                        </li>
+                        <li class="shortcut__item">
+                            <a href="#" class="shortcut__link">🎹 Piano instrumental</a>
+                        </li>
+                        <li class="shortcut__item">
+                            <a href="#" class="shortcut__link">🥁 Beat</a>
+                        </li>
+                        <li class="shortcut__item">
+                            <a href="#" class="shortcut__link">🌟 Pop</a>
+                        </li>
+                        <li class="shortcut__item">
+                            <a href="#" class="shortcut__link">🎺 Jazz</a>
+                        </li>
+                        <li class="shortcut__item">
+                            <a href="#" class="shortcut__link">🎵 Acoustic</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="app__favartist">
+                    <h2 class="favartist__title">Fav artist</h2>
+                    <ul class="favartist__list">
+                        <li class="favartist__item">
+                            <a href="#" class="favartist__link">
+
+                                <div class="favartist__item-avatar">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png/250px-191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png"
+                                        alt="" class="favartist__img">
+                                </div>
+                                <div class="favartist__item-info">
+                                    <p class="favartist__name">Taylor Swift</p>
+                                    <p class="favartist__desc">197 Song in library</p>
+                                </div>
+                                <a href="#" class="favartist__item-more">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </a>
+
+                        </li>
+                        <li class="favartist__item">
+                            <a href="#" class="favartist__link">
+
+                                <div class="favartist__item-avatar">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png/250px-191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png"
+                                        alt="" class="favartist__img">
+                                </div>
+                                <div class="favartist__item-info">
+                                    <p class="favartist__name">Taylor Swift</p>
+                                    <p class="favartist__desc">197 Song in library</p>
+                                </div>
+                                <a href="#" class="favartist__item-more">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </a>
+
+                        </li>
+                        <li class="favartist__item">
+                            <a href="#" class="favartist__link">
+
+                                <div class="favartist__item-avatar">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png/250px-191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png"
+                                        alt="" class="favartist__img">
+                                </div>
+                                <div class="favartist__item-info">
+                                    <p class="favartist__name">Taylor Swift</p>
+                                    <p class="favartist__desc">197 Song in library</p>
+                                </div>
+                                <a href="#" class="favartist__item-more">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="app__suggest">
+                    <div class="suggest__cover">
+                        <img src="http://images5.fanpop.com/image/photos/26400000/A-Thousand-Years-christina-perri-26451324-1920-1080.jpg"
+                            alt="" class="suggest__img">
+                    </div>
+                    <div class="suggest__info">
+                        <div class="suggest__info-block">
+
+                            <p class="suggest__info-name">A thousand years</p>
+                            <p class="suggest__info-desc">Christian Perry</p>
+                        </div>
+                        <a href="" class="suggest__add">
+                            <i class="fas fa-plus-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
