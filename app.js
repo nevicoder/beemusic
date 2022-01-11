@@ -10,7 +10,6 @@ nextBtn.addEventListener("click", next);
 let isPlaying = false;
 function playPause() {
   audio.setAttribute("id", audio.getAttribute("id") || 0);
-  console.log(audio.attributes.id);
   songName();
   songTime();
   if (isPlaying) {
@@ -22,6 +21,7 @@ function playPause() {
     isPlaying = true;
     playBtn.innerHTML = `<i class="fas fa-pause-circle"></i>`;
   }
+  updateSongs(audio.getAttribute("id"));
 }
 function next() {
   let trackID = audio.getAttribute("id") || 0;
