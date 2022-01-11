@@ -1,3 +1,53 @@
+const tracksData = [
+  {
+    id: 0,
+    title: "The hill",
+    artist: "The Weekend",
+    time: "4:25",
+    album: "none",
+    src: "https://data04.chiasenhac.com/downloads/1519/2/1518407-343d2a02/320/The%20Hills%20-%20The%20Weeknd.mp3",
+    active: false,
+  },
+  {
+    id: 1,
+    title: "Apocalypse",
+    artist: "Cigarettes after sex",
+    time: "5:00",
+    album: "Cigarettes after sex",
+    src: "https://data33.chiasenhac.com/downloads/1984/2/1983499-aaf23b46/320/Apocalypse%20-%20Cigarettes%20After%20Sex.mp3",
+    active: false,
+  },
+  {
+    id: 2,
+    title: "I feel like i'm drowning",
+    artist: "Two Feet",
+    time: "3:45",
+    album: "Pink",
+    src: "https://data33.chiasenhac.com/downloads/1989/2/1988390-401d6226/320/I%20Feel%20Like%20I_m%20Drowning%20-%20Two%20Feet.mp3",
+    active: false,
+  },
+  {
+    id: 3,
+    title: "Comfortably numb",
+    artist: "Pink Floyd",
+    time: "7:25",
+    album: "The Wall",
+  },
+  {
+    id: 4,
+    title: "And I love her",
+    artist: "The Beatles",
+    time: "3:14",
+    album: "none",
+  },
+  {
+    index: 5,
+    title: "Don't Stop me now",
+    artist: "Queen",
+    time: "5:25",
+    album: "none",
+  },
+];
 const maxTracks = 3;
 const trackList = document.querySelector(".playlist__list");
 const audio = document.querySelector(".app__audio");
@@ -8,6 +58,8 @@ backBtn.addEventListener("click", back);
 playBtn.addEventListener("click", playPause);
 nextBtn.addEventListener("click", next);
 let isPlaying = false;
+
+
 function playPause() {
   audio.setAttribute("id", audio.getAttribute("id") || 0);
   songName();
@@ -71,56 +123,7 @@ function updateSongs(trackID) {
   });
   loadSongs(newTracksData);
 }
-const tracksData = [
-  {
-    id: 0,
-    title: "The hill",
-    artist: "The Weekend",
-    time: "4:25",
-    album: "none",
-    src: "https://data04.chiasenhac.com/downloads/1519/2/1518407-343d2a02/320/The%20Hills%20-%20The%20Weeknd.mp3",
-    active: false,
-  },
-  {
-    id: 1,
-    title: "Apocalypse",
-    artist: "Cigarettes after sex",
-    time: "5:00",
-    album: "Cigarettes after sex",
-    src: "https://data33.chiasenhac.com/downloads/1984/2/1983499-aaf23b46/320/Apocalypse%20-%20Cigarettes%20After%20Sex.mp3",
-    active: false,
-  },
-  {
-    id: 2,
-    title: "I feel like i'm drowning",
-    artist: "Two Feet",
-    time: "3:45",
-    album: "Pink",
-    src: "https://data33.chiasenhac.com/downloads/1989/2/1988390-401d6226/320/I%20Feel%20Like%20I_m%20Drowning%20-%20Two%20Feet.mp3",
-    active: false,
-  },
-  {
-    id: 3,
-    title: "Comfortably numb",
-    artist: "Pink Floyd",
-    time: "7:25",
-    album: "The Wall",
-  },
-  {
-    id: 4,
-    title: "And I love her",
-    artist: "The Beatles",
-    time: "3:14",
-    album: "none",
-  },
-  {
-    index: 5,
-    title: "Don't Stop me now",
-    artist: "Queen",
-    time: "5:25",
-    album: "none",
-  },
-];
+
 function songName() {
   const songName = document.querySelector(".player__song-name");
   songName.textContent = tracksData[audio.getAttribute("id")].title;
